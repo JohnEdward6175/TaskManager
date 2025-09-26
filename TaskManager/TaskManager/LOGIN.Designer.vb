@@ -43,7 +43,7 @@ Partial Class LOGIN
         Label4.AutoSize = True
         Label4.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         Label4.ForeColor = Color.RoyalBlue
-        Label4.Location = New Point(172, 257)
+        Label4.Location = New Point(246, 355)
         Label4.Name = "Label4"
         Label4.Size = New Size(127, 22)
         Label4.TabIndex = 16
@@ -52,7 +52,7 @@ Partial Class LOGIN
         ' txtPassword
         ' 
         txtPassword.Font = New Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtPassword.Location = New Point(172, 289)
+        txtPassword.Location = New Point(246, 387)
         txtPassword.Name = "txtPassword"
         txtPassword.Size = New Size(464, 50)
         txtPassword.TabIndex = 15
@@ -61,7 +61,7 @@ Partial Class LOGIN
         ' txtUsername
         ' 
         txtUsername.Font = New Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtUsername.Location = New Point(172, 189)
+        txtUsername.Location = New Point(246, 287)
         txtUsername.Name = "txtUsername"
         txtUsername.Size = New Size(464, 50)
         txtUsername.TabIndex = 14
@@ -71,7 +71,7 @@ Partial Class LOGIN
         Label3.AutoSize = True
         Label3.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         Label3.ForeColor = Color.RoyalBlue
-        Label3.Location = New Point(167, 153)
+        Label3.Location = New Point(241, 251)
         Label3.Name = "Label3"
         Label3.Size = New Size(125, 22)
         Label3.TabIndex = 13
@@ -82,7 +82,7 @@ Partial Class LOGIN
         Label2.AutoSize = True
         Label2.Font = New Font("Leelawadee UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.Blue
-        Label2.Location = New Point(279, 80)
+        Label2.Location = New Point(355, 162)
         Label2.Name = "Label2"
         Label2.Size = New Size(256, 30)
         Label2.TabIndex = 11
@@ -95,7 +95,7 @@ Partial Class LOGIN
         btnForgotPassword.FlatStyle = FlatStyle.Flat
         btnForgotPassword.Font = New Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnForgotPassword.ForeColor = Color.RoyalBlue
-        btnForgotPassword.Location = New Point(148, 352)
+        btnForgotPassword.Location = New Point(222, 443)
         btnForgotPassword.Name = "btnForgotPassword"
         btnForgotPassword.Size = New Size(246, 44)
         btnForgotPassword.TabIndex = 19
@@ -109,7 +109,7 @@ Partial Class LOGIN
         btnLogin.FlatStyle = FlatStyle.Flat
         btnLogin.Font = New Font("Impact", 26.25F)
         btnLogin.ForeColor = SystemColors.ButtonHighlight
-        btnLogin.Location = New Point(172, 402)
+        btnLogin.Location = New Point(246, 533)
         btnLogin.Name = "btnLogin"
         btnLogin.Size = New Size(222, 65)
         btnLogin.TabIndex = 20
@@ -123,7 +123,7 @@ Partial Class LOGIN
         btnRegister.FlatStyle = FlatStyle.Flat
         btnRegister.Font = New Font("Impact", 26.25F)
         btnRegister.ForeColor = SystemColors.ButtonHighlight
-        btnRegister.Location = New Point(414, 402)
+        btnRegister.Location = New Point(488, 533)
         btnRegister.Name = "btnRegister"
         btnRegister.Size = New Size(222, 65)
         btnRegister.TabIndex = 21
@@ -133,11 +133,11 @@ Partial Class LOGIN
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Impact", 42.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Impact", 63F)
         Label1.ForeColor = Color.Black
-        Label1.Location = New Point(322, 21)
+        Label1.Location = New Point(361, 70)
         Label1.Name = "Label1"
-        Label1.Size = New Size(170, 71)
+        Label1.Size = New Size(250, 102)
         Label1.TabIndex = 22
         Label1.Text = "LOG IN"
         ' 
@@ -149,7 +149,7 @@ Partial Class LOGIN
         btnLogout.FlatAppearance.BorderSize = 0
         btnLogout.FlatStyle = FlatStyle.Flat
         btnLogout.Font = New Font("Impact", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnLogout.Location = New Point(39, 24)
+        btnLogout.Location = New Point(135, 24)
         btnLogout.Name = "btnLogout"
         btnLogout.Size = New Size(52, 51)
         btnLogout.TabIndex = 39
@@ -159,9 +159,9 @@ Partial Class LOGIN
         ' 
         Panel1.BackColor = Color.RoyalBlue
         Panel1.Controls.Add(btnLogout)
-        Panel1.Location = New Point(697, -12)
+        Panel1.Location = New Point(771, -12)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(190, 660)
+        Panel1.Size = New Size(212, 758)
         Panel1.TabIndex = 40
         ' 
         ' Panel2
@@ -169,7 +169,7 @@ Partial Class LOGIN
         Panel2.BackColor = Color.RoyalBlue
         Panel2.Location = New Point(-5, -19)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(128, 657)
+        Panel2.Size = New Size(193, 765)
         Panel2.TabIndex = 41
         ' 
         ' LOGIN
@@ -178,7 +178,7 @@ Partial Class LOGIN
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(800, 531)
+        ClientSize = New Size(981, 745)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Controls.Add(btnRegister)

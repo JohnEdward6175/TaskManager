@@ -37,4 +37,9 @@ Public Class LOGIN
         Dim reg As New Form1()
         reg.ShowDialog()
     End Sub
+
+    Private Sub btnForgotPassword_Click(sender As Object, e As EventArgs) Handles btnForgotPassword.Click
+        Dim forgot As New ForgotPassword()
+        forgot.ShowDialog()
+    End Sub
 End Class

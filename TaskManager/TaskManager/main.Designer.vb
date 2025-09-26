@@ -47,6 +47,7 @@ Partial Class main
         Panel2 = New Panel()
         PictureBox1 = New PictureBox()
         Label7 = New Label()
+        cmbPriority = New ComboBox()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -56,9 +57,9 @@ Partial Class main
         ' 
         txtSearch.Font = New Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtSearch.ForeColor = Color.Silver
-        txtSearch.Location = New Point(408, 16)
+        txtSearch.Location = New Point(534, 20)
         txtSearch.Name = "txtSearch"
-        txtSearch.Size = New Size(301, 39)
+        txtSearch.Size = New Size(324, 39)
         txtSearch.TabIndex = 16
         ' 
         ' btnSearch
@@ -70,35 +71,35 @@ Partial Class main
         btnSearch.FlatStyle = FlatStyle.Flat
         btnSearch.Font = New Font("Impact", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnSearch.ForeColor = SystemColors.ButtonHighlight
-        btnSearch.Location = New Point(724, 18)
+        btnSearch.Location = New Point(864, 20)
         btnSearch.Name = "btnSearch"
-        btnSearch.Size = New Size(34, 37)
+        btnSearch.Size = New Size(39, 38)
         btnSearch.TabIndex = 18
         btnSearch.UseVisualStyleBackColor = False
         ' 
         ' txtTitle
         ' 
-        txtTitle.Font = New Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtTitle.Location = New Point(99, 95)
+        txtTitle.Font = New Font("Arial", 24F, FontStyle.Bold)
+        txtTitle.Location = New Point(122, 97)
         txtTitle.Name = "txtTitle"
-        txtTitle.Size = New Size(228, 35)
+        txtTitle.Size = New Size(296, 44)
         txtTitle.TabIndex = 22
         ' 
         ' txtTags
         ' 
-        txtTags.Font = New Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtTags.Font = New Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtTags.ForeColor = Color.Black
-        txtTags.Location = New Point(107, 147)
+        txtTags.Location = New Point(123, 153)
         txtTags.Name = "txtTags"
-        txtTags.Size = New Size(414, 32)
+        txtTags.Size = New Size(295, 44)
         txtTags.TabIndex = 24
         ' 
         ' txtDescription
         ' 
-        txtDescription.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtDescription.Location = New Point(478, 88)
+        txtDescription.Font = New Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtDescription.Location = New Point(625, 97)
         txtDescription.Name = "txtDescription"
-        txtDescription.Size = New Size(319, 43)
+        txtDescription.Size = New Size(336, 50)
         txtDescription.TabIndex = 26
         ' 
         ' btnEdit
@@ -108,9 +109,9 @@ Partial Class main
         btnEdit.FlatStyle = FlatStyle.Flat
         btnEdit.Font = New Font("Impact", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnEdit.ForeColor = SystemColors.ButtonHighlight
-        btnEdit.Location = New Point(107, 529)
+        btnEdit.Location = New Point(34, 618)
         btnEdit.Name = "btnEdit"
-        btnEdit.Size = New Size(131, 43)
+        btnEdit.Size = New Size(221, 66)
         btnEdit.TabIndex = 28
         btnEdit.Text = "EDIT"
         btnEdit.UseVisualStyleBackColor = False
@@ -122,9 +123,9 @@ Partial Class main
         btnDelete.FlatStyle = FlatStyle.Flat
         btnDelete.Font = New Font("Impact", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnDelete.ForeColor = SystemColors.ButtonHighlight
-        btnDelete.Location = New Point(262, 529)
+        btnDelete.Location = New Point(284, 618)
         btnDelete.Name = "btnDelete"
-        btnDelete.Size = New Size(118, 43)
+        btnDelete.Size = New Size(208, 66)
         btnDelete.TabIndex = 35
         btnDelete.Text = "DELETE"
         btnDelete.UseVisualStyleBackColor = False
@@ -136,9 +137,9 @@ Partial Class main
         btnMoveLeft.FlatStyle = FlatStyle.Flat
         btnMoveLeft.Font = New Font("Impact", 18F)
         btnMoveLeft.ForeColor = SystemColors.ButtonHighlight
-        btnMoveLeft.Location = New Point(438, 530)
+        btnMoveLeft.Location = New Point(537, 619)
         btnMoveLeft.Name = "btnMoveLeft"
-        btnMoveLeft.Size = New Size(150, 43)
+        btnMoveLeft.Size = New Size(186, 66)
         btnMoveLeft.TabIndex = 36
         btnMoveLeft.Text = "MOVE RIGHT"
         btnMoveLeft.UseVisualStyleBackColor = False
@@ -150,9 +151,9 @@ Partial Class main
         btnMoveRight.FlatStyle = FlatStyle.Flat
         btnMoveRight.Font = New Font("Impact", 18F)
         btnMoveRight.ForeColor = SystemColors.ButtonHighlight
-        btnMoveRight.Location = New Point(603, 530)
+        btnMoveRight.Location = New Point(769, 619)
         btnMoveRight.Name = "btnMoveRight"
-        btnMoveRight.Size = New Size(151, 43)
+        btnMoveRight.Size = New Size(192, 66)
         btnMoveRight.TabIndex = 37
         btnMoveRight.Text = "MOVE LEFT"
         btnMoveRight.UseVisualStyleBackColor = False
@@ -161,7 +162,7 @@ Partial Class main
         ' 
         lblLoggedIn.AutoSize = True
         lblLoggedIn.Font = New Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblLoggedIn.Location = New Point(12, 589)
+        lblLoggedIn.Location = New Point(34, 701)
         lblLoggedIn.Name = "lblLoggedIn"
         lblLoggedIn.Size = New Size(198, 19)
         lblLoggedIn.TabIndex = 28
@@ -175,9 +176,9 @@ Partial Class main
         btnLogout.FlatAppearance.BorderSize = 0
         btnLogout.FlatStyle = FlatStyle.Flat
         btnLogout.Font = New Font("Impact", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnLogout.Location = New Point(787, 7)
+        btnLogout.Location = New Point(919, 16)
         btnLogout.Name = "btnLogout"
-        btnLogout.Size = New Size(52, 51)
+        btnLogout.Size = New Size(46, 46)
         btnLogout.TabIndex = 38
         btnLogout.UseVisualStyleBackColor = False
         ' 
@@ -186,7 +187,7 @@ Partial Class main
         Label1.AutoSize = True
         Label1.Font = New Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Black
-        Label1.Location = New Point(19, 21)
+        Label1.Location = New Point(33, 28)
         Label1.Name = "Label1"
         Label1.Size = New Size(92, 32)
         Label1.TabIndex = 39
@@ -197,7 +198,7 @@ Partial Class main
         Label2.AutoSize = True
         Label2.Font = New Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.Black
-        Label2.Location = New Point(262, 21)
+        Label2.Location = New Point(332, 28)
         Label2.Name = "Label2"
         Label2.Size = New Size(166, 32)
         Label2.TabIndex = 40
@@ -208,7 +209,7 @@ Partial Class main
         Label3.AutoSize = True
         Label3.Font = New Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.Black
-        Label3.Location = New Point(505, 21)
+        Label3.Location = New Point(635, 28)
         Label3.Name = "Label3"
         Label3.Size = New Size(83, 32)
         Label3.TabIndex = 41
@@ -217,39 +218,40 @@ Partial Class main
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(43, 99)
+        Label4.Font = New Font("Arial", 24F, FontStyle.Bold)
+        Label4.Location = New Point(31, 97)
         Label4.Name = "Label4"
-        Label4.Size = New Size(52, 24)
+        Label4.Size = New Size(85, 37)
         Label4.TabIndex = 42
         Label4.Text = "Title"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(43, 147)
+        Label5.Font = New Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(32, 153)
         Label5.Name = "Label5"
-        Label5.Size = New Size(58, 24)
+        Label5.Size = New Size(90, 37)
         Label5.TabIndex = 43
         Label5.Text = "Tags"
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(347, 99)
+        Label6.Font = New Font("Arial", 24F, FontStyle.Bold)
+        Label6.Location = New Point(424, 97)
         Label6.Name = "Label6"
-        Label6.Size = New Size(125, 24)
+        Label6.Size = New Size(195, 37)
         Label6.TabIndex = 44
         Label6.Text = "Description"
         ' 
         ' lvTodo
         ' 
         lvTodo.BackColor = Color.LightCyan
-        lvTodo.Location = New Point(19, 68)
+        lvTodo.Font = New Font("Segoe UI", 12F)
+        lvTodo.Location = New Point(33, 63)
         lvTodo.Name = "lvTodo"
-        lvTodo.Size = New Size(212, 209)
+        lvTodo.Size = New Size(257, 274)
         lvTodo.TabIndex = 45
         lvTodo.UseCompatibleStateImageBehavior = False
         lvTodo.View = View.List
@@ -257,9 +259,10 @@ Partial Class main
         ' lvInProgress
         ' 
         lvInProgress.BackColor = Color.LightCyan
-        lvInProgress.Location = New Point(262, 68)
+        lvInProgress.Font = New Font("Segoe UI", 12F)
+        lvInProgress.Location = New Point(341, 63)
         lvInProgress.Name = "lvInProgress"
-        lvInProgress.Size = New Size(210, 209)
+        lvInProgress.Size = New Size(242, 274)
         lvInProgress.TabIndex = 47
         lvInProgress.UseCompatibleStateImageBehavior = False
         lvInProgress.View = View.List
@@ -267,9 +270,10 @@ Partial Class main
         ' lvDone
         ' 
         lvDone.BackColor = Color.LightCyan
-        lvDone.Location = New Point(505, 68)
+        lvDone.Font = New Font("Segoe UI", 12F)
+        lvDone.Location = New Point(635, 63)
         lvDone.Name = "lvDone"
-        lvDone.Size = New Size(220, 209)
+        lvDone.Size = New Size(252, 274)
         lvDone.TabIndex = 48
         lvDone.UseCompatibleStateImageBehavior = False
         lvDone.View = View.List
@@ -281,9 +285,9 @@ Partial Class main
         btnAddTask.FlatStyle = FlatStyle.Flat
         btnAddTask.Font = New Font("Impact", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnAddTask.ForeColor = SystemColors.ButtonHighlight
-        btnAddTask.Location = New Point(547, 140)
+        btnAddTask.Location = New Point(769, 153)
         btnAddTask.Name = "btnAddTask"
-        btnAddTask.Size = New Size(250, 50)
+        btnAddTask.Size = New Size(193, 44)
         btnAddTask.TabIndex = 49
         btnAddTask.Text = "ADD"
         btnAddTask.UseVisualStyleBackColor = False
@@ -297,9 +301,9 @@ Partial Class main
         Panel1.Controls.Add(lvInProgress)
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(lvTodo)
-        Panel1.Location = New Point(42, 212)
+        Panel1.Location = New Point(34, 217)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(755, 301)
+        Panel1.Size = New Size(927, 374)
         Panel1.TabIndex = 50
         ' 
         ' Panel2
@@ -312,7 +316,7 @@ Partial Class main
         Panel2.Controls.Add(btnLogout)
         Panel2.Location = New Point(-4, -4)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(897, 75)
+        Panel2.Size = New Size(1008, 78)
         Panel2.TabIndex = 51
         ' 
         ' PictureBox1
@@ -337,13 +341,24 @@ Partial Class main
         Label7.TabIndex = 52
         Label7.Text = "Dashboard"
         ' 
+        ' cmbPriority
+        ' 
+        cmbPriority.Font = New Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        cmbPriority.FormattingEnabled = True
+        cmbPriority.Location = New Point(435, 153)
+        cmbPriority.Name = "cmbPriority"
+        cmbPriority.Size = New Size(317, 44)
+        cmbPriority.TabIndex = 52
+        cmbPriority.Text = "Priority Level"
+        ' 
         ' main
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(853, 622)
+        ClientSize = New Size(1000, 746)
+        Controls.Add(cmbPriority)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Controls.Add(btnAddTask)
@@ -397,4 +412,5 @@ Partial Class main
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label7 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents cmbPriority As ComboBox
 End Class
